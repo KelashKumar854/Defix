@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defix</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./../../assets/favicon.jfif">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .brand-gradient {
+            background: linear-gradient(90deg, #2563eb, #38bdf8);
+        }
+
+        .service-card {
+            @apply bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+        }
+
+        .icon {
+            @apply text-5xl text-blue-600 mb-5;
+        }
+
+        .title {
+            @apply text-xl font-semibold text-gray-900 mb-4;
+        }
+
+        .list {
+            @apply text-gray-600 text-sm space-y-2;
+        }
+
+        .graphic-card {
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .graphic-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .graphic-img {
+            transition: transform 0.5s ease;
+        }
+
+        .graphic-card:hover .graphic-img {
+            transform: scale(1.12);
+        }
+    </style>
+
+</head>
+
+<body class="overflow-x-hidden font-sans bg-gray-50">
+
+    <!-- ================= Navbar ================= -->
+    <header class="fixed top-0 left-0 w-full z-50 brand-gradient shadow-md">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+
+            <!-- Logo -->
+            <a href="./../../index.html" class="flex items-center gap-2">
+                <img src="./../../assets/logo.png" alt="Logo" class="h-14 w-auto object-contain">
+            </a>
+
+            <!-- Nav Links -->
+            <ul class="hidden md:flex items-center gap-8 text-white font-medium">
+                <li><a href="#Home" class="hover:text-blue-600 transition">Home</a></li>
+                <li><a href="#Services" class="hover:text-blue-600 transition">Services</a></li>
+                <li><a href="#WhyUs" class="hover:text-blue-600 transition">Why Us</a></li>
+                <li><a href="#Contact" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="https://t.me/Neroankh" target="_blank"
+                    class="bg-white text-blue-600 px-5 py-2 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Let’s Work Together
+                </a>
+
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <ion-icon onclick="toggleMenu()" name="menu-outline"
+                class="text-3xl text-gray-800 cursor-pointer md:hidden">
+            </ion-icon>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-6 py-6 space-y-4 text-gray-700 font-medium">
+            <a href="#Home" class="block">Home</a>
+            <a href="#Services" class="block">Services</a>
+            <a href="#WhyUs" class="block">Why Us</a>
+            <a href="#Contact" class="block">Contact</a>
+            <a href="https://t.me/Neroankh" target="_blank"
+                class="block text-center bg-blue-600 text-white py-2 rounded-lg">
+                Let’s Work Together
+            </a>
+        </div>
+    </header>
+
+    <!-- ================= Graphics Section ================= -->
+    <section class="pt-36 pb-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Heading -->
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                    Our Graphic Work
+                </h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    A glimpse of our creative designs crafted for crypto projects,
+                    branding, promotions, and social media growth.
+                </p>
+            </div>
+
+            <!-- Graphics Grid -->
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+                <!-- Graphic Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                    <img src="./assets/graphic-1.jfif" alt="Graphic Design 1" onclick="openLightbox(this.src)"
+                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900">Twitter Post Design</h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            High-engagement social media creatives.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Graphic Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                    <img src="./assets/graphic-2.jfif" alt="Graphic Design 2" onclick="openLightbox(this.src)"
+                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900">Telegram Banner</h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Clean and professional community branding.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Graphic Card 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                    <img src="./assets/graphic-3.jfif" alt="Graphic Design 3" onclick="openLightbox(this.src)"
+                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900">Promo Creatives</h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Eye-catching campaign visuals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Graphic Card 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                    <img src="./assets/graphic-4.jfif" alt="Graphic Design 4" onclick="openLightbox(this.src)"
+                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900">Brand Identity</h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Consistent branding & visual identity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Graphic Card 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                    <img src="./assets/graphic-5.jfif" alt="Graphic Design 5" onclick="openLightbox(this.src)"
+                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900">Shilling Creatives</h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Designed for maximum reach & clicks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Graphic Card 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                    <img src="./assets/graphic-6.jfif" alt="Graphic Design 6" onclick="openLightbox(this.src)"
+                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900">Custom Designs</h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Tailored visuals based on your needs.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ================= Contact Section ================= -->
+    <section id="Contact" class="bg-white py-24 border-t">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                Contact Us
+            </h2>
+
+            <p class="text-gray-600 mb-10 max-w-xl">
+                Reach out to us on social media or email — we usually respond fast.
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex gap-6 text-3xl text-blue-600">
+
+                <a href="https://t.me/Def_LifeDapp" target="_blank" class="hover:text-sky-500 transition">
+                    <ion-icon name="paper-plane"></ion-icon>
+                </a>
+
+                <a href="https://x.com/LiveBoost_" target="_blank" class="hover:text-sky-400 transition">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+
+            </div>
+
+            <p class="mt-8 text-gray-700 font-medium">
+                📧 maheshrairathore@gmail.com
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Image Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+
+        <span onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-4xl cursor-pointer">&times;</span>
+
+        <img id="lightboxImg" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl">
+    </div>
+
+
+    <!-- ================= Scripts ================= -->
+
+    <script>
+
+        function toggleMenu() {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        }
+
+        function openLightbox(src) {
+            document.getElementById("lightboxImg").src = src;
+            document.getElementById("lightbox").classList.remove("hidden");
+            document.getElementById("lightbox").classList.add("flex");
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").classList.add("hidden");
+            document.getElementById("lightbox").classList.remove("flex");
+        }
+    </script>
+
+
+</body>
+
+</html>
