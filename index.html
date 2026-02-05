@@ -21,11 +21,11 @@
 
 </head>
 
-<body class="overflow-x-hidden font-sans bg-gray-50">
+<body class="overflow-x-hidden font-sans bg-gray-50 relative">
 
     <!-- ================= Navbar ================= -->
     <header class="fixed top-0 left-0 w-full z-50 brand-gradient shadow-md">
-        <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
 
             <!-- Logo -->
             <a href="#" class="flex items-center gap-2">
@@ -51,16 +51,16 @@
 
             <!-- Mobile Menu Icon -->
             <ion-icon onclick="toggleMenu()" name="menu-outline"
-                class="text-3xl text-gray-800 cursor-pointer md:hidden">
+                class="text-3xl text-white cursor-pointer md:hidden">
             </ion-icon>
         </nav>
 
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-6 py-6 space-y-4 text-gray-700 font-medium">
-            <a href="#Home" class="block">Home</a>
-            <a href="#Services" class="block">Services</a>
-            <a href="#WhyUs" class="block">Why Us</a>
-            <a href="#Contact" class="block">Contact</a>
+            <a href="#Home" class="block" onclick="toggleMenu()">Home</a>
+            <a href="#Services" class="block" onclick="toggleMenu()">Services</a>
+            <a href="#WhyUs" class="block" onclick="toggleMenu()">Why Us</a>
+            <a href="#Contact" class="block" onclick="toggleMenu()">Contact</a>
             <a href="https://t.me/Neroankh" target="_blank"
                 class="block text-center bg-blue-600 text-white py-2 rounded-lg">
                 Let’s Work Together
@@ -70,13 +70,13 @@
 
 
     <!-- ================= Hero / Home Section ================= -->
-    <section id="Home" class="bg-gradient-to-b from-blue-50 to-white pt-36 pb-24">
-        <div class="max-w-6xl mx-auto px-6">
+<section id="Home" class="bg-gradient-to-b from-blue-50 to-white pt-28 pb-20 md:pt-36 md:pb-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <h4 class="text-sm font-semibold text-blue-600 tracking-wide">
                 GrowthWithDefix
             </h4>
 
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-4 max-w-3xl leading-tight">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mt-4 max-w-3xl leading-tight">
                 Powering the Next
                 <span class="block text-blue-600">
                     Generation of Crypto Projects
@@ -101,7 +101,7 @@
 
     <!-- ================= Services Section ================= -->
 <section id="Services" class="bg-gray-50 py-24">
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
         <!-- Heading -->
         <h2 class="text-3xl font-bold text-gray-900 mb-4">
@@ -113,11 +113,11 @@
         </p>
 
         <!-- Services Grid -->
-        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+<div class="grid gap-6 sm:gap-8 sm:grid-cols-2 md:grid-cols-3">
 
             <!-- Card 1 -->
             <div
-                class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
                 <ion-icon name="logo-twitter"
                     class="text-4xl text-blue-500 mb-4"></ion-icon>
 
@@ -135,7 +135,7 @@
 
             <!-- Card 2 -->
             <div
-                class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
                 <ion-icon name="paper-plane"
                     class="text-4xl text-sky-500 mb-4"></ion-icon>
 
@@ -153,7 +153,7 @@
 
             <!-- Card 3 -->
             <div
-                class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
                 <ion-icon name="megaphone"
                     class="text-4xl text-purple-500 mb-4"></ion-icon>
 
@@ -171,7 +171,7 @@
 
             <!-- Card 4 -->
             <div
-                class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition flex flex-col">
+                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition flex flex-col">
                 <ion-icon name="brush"
                     class="text-4xl text-pink-500 mb-4"></ion-icon>
 
@@ -193,7 +193,7 @@
 
             <!-- Card 5 -->
             <div
-                class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
                 <ion-icon name="shield-checkmark"
                     class="text-4xl text-green-500 mb-4"></ion-icon>
 
@@ -217,7 +217,7 @@
 
     <!-- ================= Why Choose Us ================= -->
     <section id="WhyUs" class="bg-gradient-to-b from-white to-blue-50 py-24">
-        <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
             <!-- Section Heading -->
             <div class="max-w-2xl mb-16">
@@ -321,7 +321,7 @@
         <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[500px]
               bg-blue-400/20 blur-[120px] rounded-full"></div>
 
-        <div class="relative max-w-6xl mx-auto px-6">
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
 
             <!-- Header -->
             <div class="text-center mb-20">

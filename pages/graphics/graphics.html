@@ -16,48 +16,15 @@
         .brand-gradient {
             background: linear-gradient(90deg, #2563eb, #38bdf8);
         }
-
-        .service-card {
-            @apply bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
-        }
-
-        .icon {
-            @apply text-5xl text-blue-600 mb-5;
-        }
-
-        .title {
-            @apply text-xl font-semibold text-gray-900 mb-4;
-        }
-
-        .list {
-            @apply text-gray-600 text-sm space-y-2;
-        }
-
-        .graphic-card {
-            overflow: hidden;
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-        }
-
-        .graphic-card:hover {
-            transform: translateY(-6px);
-        }
-
-        .graphic-img {
-            transition: transform 0.5s ease;
-        }
-
-        .graphic-card:hover .graphic-img {
-            transform: scale(1.12);
-        }
     </style>
 
 </head>
 
-<body class="overflow-x-hidden font-sans bg-gray-50">
+<body class="overflow-x-hidden font-sans bg-gray-50 relative">
 
     <!-- ================= Navbar ================= -->
     <header class="fixed top-0 left-0 w-full z-50 brand-gradient shadow-md">
-        <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
 
             <!-- Logo -->
             <a href="#" class="flex items-center gap-2">
@@ -83,16 +50,16 @@
 
             <!-- Mobile Menu Icon -->
             <ion-icon onclick="toggleMenu()" name="menu-outline"
-                class="text-3xl text-gray-800 cursor-pointer md:hidden">
+                class="text-3xl text-white cursor-pointer md:hidden">
             </ion-icon>
         </nav>
 
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-6 py-6 space-y-4 text-gray-700 font-medium">
-            <a href="#Home" class="block">Home</a>
-            <a href="#Services" class="block">Services</a>
-            <a href="#WhyUs" class="block">Why Us</a>
-            <a href="#Contact" class="block">Contact</a>
+            <a href="../../index.html#Home" class="block" onclick="toggleMenu()">Home</a>
+            <a href="../../index.html#Services" class="block" onclick="toggleMenu()">Services</a>
+            <a href="../../index.html#WhyUs" class="block" onclick="toggleMenu()">Why Us</a>
+            <a href="#Contact" class="block" onclick="toggleMenu()">Contact</a>
             <a href="https://t.me/Neroankh" target="_blank"
                 class="block text-center bg-blue-600 text-white py-2 rounded-lg">
                 Let’s Work Together
@@ -102,7 +69,7 @@
 
     <!-- ================= Graphics Section ================= -->
     <section class="pt-36 pb-24 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
             <!-- Heading -->
             <div class="text-center mb-14">
@@ -116,12 +83,12 @@
             </div>
 
             <!-- Graphics Grid -->
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
 
                 <!-- Graphic Card 1 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
                     <img src="assets/graphic-1.jfif" alt="Graphic Design 1" onclick="openLightbox(this.src)"
-                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                        class="w-full h-56 object-cover cursor-pointer transition-transform duration-500 hover:scale-110">
                     <div class="p-5">
                         <h3 class="font-semibold text-gray-900">Top 10 Blockchains by Dapps</h3>
                     </div>
@@ -130,7 +97,7 @@
                 <!-- Graphic Card 2 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
                     <img src="assets/graphic-2.jfif" alt="Graphic Design 2" onclick="openLightbox(this.src)"
-                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                        class="w-full h-56 object-cover cursor-pointer transition-transform duration-500 hover:scale-110">
                     <div class="p-5">
                         <h3 class="font-semibold text-gray-900">Notable Chains via Total Value Locked</h3>
                     </div>
@@ -139,7 +106,7 @@
                 <!-- Graphic Card 3 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
                     <img src="assets/graphic-3.jfif" alt="Graphic Design 3" onclick="openLightbox(this.src)"
-                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                        class="w-full h-56 object-cover cursor-pointer transition-transform duration-500 hover:scale-110">
                     <div class="p-5">
                         <h3 class="font-semibold text-gray-900">Exchange Futures Open Interest(USD)</h3>
                     </div>
@@ -148,7 +115,7 @@
                 <!-- Graphic Card 4 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
                     <img src="assets/graphic-4.jfif" alt="Graphic Design 4" onclick="openLightbox(this.src)"
-                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                        class="w-full h-56 object-cover cursor-pointer transition-transform duration-500 hover:scale-110">
                     <div class="p-5">
                         <h3 class="font-semibold text-gray-900">Top Tokens Unlocks in the Next 7 Days</h3>
                     </div>
@@ -157,7 +124,7 @@
                 <!-- Graphic Card 5 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
                     <img src="assets/graphic-5.jfif" alt="Graphic Design 5" onclick="openLightbox(this.src)"
-                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                        class="w-full h-56 object-cover cursor-pointer transition-transform duration-500 hover:scale-110">
                     <div class="p-5">
                         <h3 class="font-semibold text-gray-900">Top 10 Blockchains by Dapps</h3>
                     </div>
@@ -166,7 +133,7 @@
                 <!-- Graphic Card 6 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
                     <img src="assets/graphic-6.jfif" alt="Graphic Design 6" onclick="openLightbox(this.src)"
-                        class="graphic-img w-full h-56 object-cover cursor-pointer">
+                        class="w-full h-56 object-cover cursor-pointer transition-transform duration-500 hover:scale-110">
                     <div class="p-5">
                         <h3 class="font-semibold text-gray-900">Top 10 Projects by TVL on Ethereum</h3>
                     </div>
@@ -186,7 +153,7 @@
         <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[500px]
               bg-blue-400/20 blur-[120px] rounded-full"></div>
 
-        <div class="relative max-w-6xl mx-auto px-6">
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
 
             <!-- Header -->
             <div class="text-center mb-20">
@@ -286,7 +253,8 @@
 
         <span onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-4xl cursor-pointer">&times;</span>
 
-        <img id="lightboxImg" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl">
+        <img id="lightboxImg" class="max-w-[90vw] max-h-[85vh] object-contain rounded-xl shadow-2xl">
+
     </div>
 
 
