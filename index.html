@@ -16,7 +16,6 @@
         .brand-gradient {
             background: linear-gradient(90deg, #2563eb, #38bdf8);
         }
-
     </style>
 
 </head>
@@ -50,8 +49,7 @@
             </div>
 
             <!-- Mobile Menu Icon -->
-            <ion-icon onclick="toggleMenu()" name="menu-outline"
-                class="text-3xl text-white cursor-pointer md:hidden">
+            <ion-icon onclick="toggleMenu()" name="menu-outline" class="text-3xl text-white cursor-pointer md:hidden">
             </ion-icon>
         </nav>
 
@@ -70,7 +68,7 @@
 
 
     <!-- ================= Hero / Home Section ================= -->
-<section id="Home" class="bg-gradient-to-b from-blue-50 to-white pt-28 pb-20 md:pt-36 md:pb-24">
+    <section id="Home" class="bg-gradient-to-b from-blue-50 to-white pt-28 pb-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <h4 class="text-sm font-semibold text-blue-600 tracking-wide">
                 GrowthWithDefix
@@ -100,118 +98,110 @@
 
 
     <!-- ================= Services Section ================= -->
-<section id="Services" class="bg-gray-50 py-24">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="Services" class="bg-gray-50 py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
-        <!-- Heading -->
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            Our Services
-        </h2>
-        <p class="text-gray-600 mb-14 max-w-2xl">
-            Complete growth solutions for crypto projects — from community building
-            to large-scale promotional campaigns.
-        </p>
+            <!-- Heading -->
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Our Services
+            </h2>
+            <p class="text-gray-600 mb-14 max-w-2xl">
+                Complete growth solutions for crypto projects — from community building
+                to large-scale promotional campaigns.
+            </p>
 
-        <!-- Services Grid -->
-<div class="grid gap-6 sm:gap-8 sm:grid-cols-2 md:grid-cols-3">
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-            <!-- Card 1 -->
-            <div
-                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-                <ion-icon name="logo-twitter"
-                    class="text-4xl text-blue-500 mb-4"></ion-icon>
 
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                    Twitter Engagement
-                </h3>
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+                    <ion-icon name="logo-twitter" class="text-4xl text-blue-500 mb-4"></ion-icon>
 
-                <ul class="space-y-2 text-gray-600 text-sm">
-                    <li>Twitter Likes & Followers</li>
-                    <li>Daily Twitter Raids (1k/day)</li>
-                    <li>Twitter/X Space Hosting</li>
-                    <li>Twitter Account Management</li>
-                </ul>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                        Twitter Engagement
+                    </h3>
+
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>Twitter Likes & Followers</li>
+                        <li>Daily Twitter Raids (1k/day)</li>
+                        <li>Twitter/X Space Hosting</li>
+                        <li>Twitter Account Management</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+                    <ion-icon name="paper-plane" class="text-4xl text-sky-500 mb-4"></ion-icon>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                        Telegram Growth
+                    </h3>
+
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>Telegram Group Shillings</li>
+                        <li>Telegram DM Raids</li>
+                        <li>Telegram Online Members</li>
+                        <li>Active Community Moderation</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+                    <ion-icon name="megaphone" class="text-4xl text-purple-500 mb-4"></ion-icon>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                        Shilling & Promotion
+                    </h3>
+
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>CMC Likes & Followers</li>
+                        <li>Customised Shilling Campaigns</li>
+                        <li>Posting via 100+ KOLs / day</li>
+                        <li>Targeted Crypto Communities</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition flex flex-col">
+                    <ion-icon name="brush" class="text-4xl text-pink-500 mb-4"></ion-icon>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                        Creative & Branding
+                    </h3>
+
+                    <ul class="space-y-2 text-gray-600 text-sm mb-6">
+                        <li>Graphic Designing</li>
+                        <li>Brand Consistency</li>
+                    </ul>
+
+                    <a href="pages/graphics/graphics.html"
+                        class="mt-auto inline-flex items-center gap-1 text-blue-600 font-semibold text-sm hover:underline">
+                        View Graphics
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+                    <ion-icon name="shield-checkmark" class="text-4xl text-green-500 mb-4"></ion-icon>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                        Trusted Growth
+                    </h3>
+
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>Real Engagement Only</li>
+                        <li>No Bots / No Fake Accounts</li>
+                        <li>Transparent Reporting</li>
+                        <li>Long-Term Partnerships</li>
+                    </ul>
+                </div>
+
             </div>
-
-            <!-- Card 2 -->
-            <div
-                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-                <ion-icon name="paper-plane"
-                    class="text-4xl text-sky-500 mb-4"></ion-icon>
-
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                    Telegram Growth
-                </h3>
-
-                <ul class="space-y-2 text-gray-600 text-sm">
-                    <li>Telegram Group Shillings</li>
-                    <li>Telegram DM Raids</li>
-                    <li>Telegram Online Members</li>
-                    <li>Active Community Moderation</li>
-                </ul>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-                <ion-icon name="megaphone"
-                    class="text-4xl text-purple-500 mb-4"></ion-icon>
-
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                    Shilling & Promotion
-                </h3>
-
-                <ul class="space-y-2 text-gray-600 text-sm">
-                    <li>CMC Likes & Followers</li>
-                    <li>Customised Shilling Campaigns</li>
-                    <li>Posting via 100+ KOLs / day</li>
-                    <li>Targeted Crypto Communities</li>
-                </ul>
-            </div>
-
-            <!-- Card 4 -->
-            <div
-                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition flex flex-col">
-                <ion-icon name="brush"
-                    class="text-4xl text-pink-500 mb-4"></ion-icon>
-
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                    Creative & Branding
-                </h3>
-
-                <ul class="space-y-2 text-gray-600 text-sm mb-6">
-                    <li>Graphic Designing</li>
-                    <li>Brand Consistency</li>
-                </ul>
-
-                <a href="pages/graphics/graphics.html"
-                    class="mt-auto inline-flex items-center gap-1 text-blue-600 font-semibold text-sm hover:underline">
-                    View Graphics
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-            </div>
-
-            <!-- Card 5 -->
-            <div
-                class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-                <ion-icon name="shield-checkmark"
-                    class="text-4xl text-green-500 mb-4"></ion-icon>
-
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                    Trusted Growth
-                </h3>
-
-                <ul class="space-y-2 text-gray-600 text-sm">
-                    <li>Real Engagement Only</li>
-                    <li>No Bots / No Fake Accounts</li>
-                    <li>Transparent Reporting</li>
-                    <li>Long-Term Partnerships</li>
-                </ul>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -230,7 +220,8 @@
             </div>
 
             <!-- Features Grid -->
-            <div class="grid md:grid-cols-2 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10">
+
 
                 <!-- Item 1 -->
                 <div
@@ -315,7 +306,7 @@
 
 
     <!-- ================= Contact Section ================= -->
-    <section id="Contact" class="relative py-32 bg-gradient-to-b from-blue-50 via-white to-white">
+    <section id="Contact" class="relative py-32 bg-gradient-to-b from-blue-50 via-white to-white overflow-hidden">
 
         <!-- Background Glow -->
         <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[500px]
